@@ -1,0 +1,239 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="c:\program files (x86)\microsoft visual studio 12.0\team tools\static analysis tools\fxcop\Xml\CodeAnalysisReport.xsl"?>
+<FxCopReport Version="12.0">
+ <Targets>
+  <Target Name="C:\Users\GAMING_SIXTY9\Desktop\data base\data base\WindowsFormsApplication1\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe">
+   <Modules>
+    <Module Name="windowsformsapplication1.exe">
+     <Namespaces>
+      <Namespace Name="WindowsFormsApplication1">
+       <Types>
+        <Type Name="Form1" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#button1_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Do not dispose objects multiple times" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2023-09-10 07:27:50Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="c:\Users\GAMING_SIXTY9\Desktop\data base\data base\WindowsFormsApplication1\WindowsFormsApplication1" File="Form1.cs" Line="32">Object 'connection' can be disposed more than once in method 'Form1.button1_Click(object, EventArgs)'. To avoid generating a System.ObjectDisposedException you should not call Dispose more than one time on an object.: Lines: 32</Issue>
+            </Message>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2023-09-10 07:27:50Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="c:\Users\GAMING_SIXTY9\Desktop\data base\data base\WindowsFormsApplication1\WindowsFormsApplication1" File="Form1.cs" Line="27">The query string passed to 'SqlCommand.SqlCommand(string, SqlConnection)' in 'Form1.button1_Click(object, EventArgs)' could contain the following variables 'this.textBox1.Text', 'this.textBox2.Text', 'this.textBox3.Text', 'this.textBox4.Text', 'this.textBox5.Text'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#button2_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2023-09-10 07:27:50Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="c:\Users\GAMING_SIXTY9\Desktop\data base\data base\WindowsFormsApplication1\WindowsFormsApplication1" File="Form1.cs" Line="82">The query string passed to 'SqlCommand.SqlCommand(string, SqlConnection)' in 'Form1.button2_Click(object, EventArgs)' could contain the following variables 'this.textBox2.Text', 'this.textBox3.Text', 'this.textBox4.Text', 'this.textBox5.Text', 'this.comboBox1.Text'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#button3_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Do not dispose objects multiple times" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2023-09-10 07:27:50Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="c:\Users\GAMING_SIXTY9\Desktop\data base\data base\WindowsFormsApplication1\WindowsFormsApplication1" File="Form1.cs" Line="119">Object 'connection' can be disposed more than once in method 'Form1.button3_Click(object, EventArgs)'. To avoid generating a System.ObjectDisposedException you should not call Dispose more than one time on an object.: Lines: 119</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#button4_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Do not dispose objects multiple times" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2023-09-10 07:27:50Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="c:\Users\GAMING_SIXTY9\Desktop\data base\data base\WindowsFormsApplication1\WindowsFormsApplication1" File="Form1.cs" Line="147">Object 'connection' can be disposed more than once in method 'Form1.button4_Click(object, EventArgs)'. To avoid generating a System.ObjectDisposedException you should not call Dispose more than one time on an object.: Lines: 147</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="Form2" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#button1_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Do not dispose objects multiple times" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2023-09-10 07:27:50Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="c:\Users\GAMING_SIXTY9\Desktop\data base\data base\WindowsFormsApplication1\WindowsFormsApplication1" File="Form2.cs" Line="46">Object 'connection' can be disposed more than once in method 'Form2.button1_Click(object, EventArgs)'. To avoid generating a System.ObjectDisposedException you should not call Dispose more than one time on an object.: Lines: 46</Issue>
+            </Message>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2023-09-10 07:27:50Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="c:\Users\GAMING_SIXTY9\Desktop\data base\data base\WindowsFormsApplication1\WindowsFormsApplication1" File="Form2.cs" Line="41">The query string passed to 'SqlCommand.SqlCommand(string, SqlConnection)' in 'Form2.button1_Click(object, EventArgs)' could contain the following variables 'this.textBox1.Text', 'this.textBox2.Text', 'this.textBox3.Text', 'this.textBox4.Text', 'this.textBox5.Text', 'this.textBox6.Text'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#button2_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2023-09-10 07:27:50Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="c:\Users\GAMING_SIXTY9\Desktop\data base\data base\WindowsFormsApplication1\WindowsFormsApplication1" File="Form2.cs" Line="110">The query string passed to 'SqlCommand.SqlCommand(string, SqlConnection)' in 'Form2.button2_Click(object, EventArgs)' could contain the following variables 'this.textBox2.Text', 'this.textBox3.Text', 'this.textBox4.Text', 'this.textBox5.Text', 'this.textBox6.Text', 'this.comboBox1.Text'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#button3_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Do not dispose objects multiple times" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2023-09-10 07:27:50Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="c:\Users\GAMING_SIXTY9\Desktop\data base\data base\WindowsFormsApplication1\WindowsFormsApplication1" File="Form2.cs" Line="102">Object 'connection' can be disposed more than once in method 'Form2.button3_Click(object, EventArgs)'. To avoid generating a System.ObjectDisposedException you should not call Dispose more than one time on an object.: Lines: 102</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#button4_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Do not dispose objects multiple times" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2023-09-10 07:27:50Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="c:\Users\GAMING_SIXTY9\Desktop\data base\data base\WindowsFormsApplication1\WindowsFormsApplication1" File="Form2.cs" Line="75">Object 'connection' can be disposed more than once in method 'Form2.button4_Click(object, EventArgs)'. To avoid generating a System.ObjectDisposedException you should not call Dispose more than one time on an object.: Lines: 75</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="Form3" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#button1_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Do not dispose objects multiple times" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2023-09-10 07:27:50Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="c:\Users\GAMING_SIXTY9\Desktop\data base\data base" File="Form3.cs" Line="57">Object 'connection' can be disposed more than once in method 'Form3.button1_Click(object, EventArgs)'. To avoid generating a System.ObjectDisposedException you should not call Dispose more than one time on an object.: Lines: 57</Issue>
+            </Message>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2023-09-10 07:27:50Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="c:\Users\GAMING_SIXTY9\Desktop\data base\data base" File="Form3.cs" Line="52">The query string passed to 'SqlCommand.SqlCommand(string, SqlConnection)' in 'Form3.button1_Click(object, EventArgs)' could contain the following variables 'this.textBox1.Text', 'this.textBox3.Text', 'this.textBox4.Text', 'this.textBox5.Text', 'this.textBox6.Text'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#button2_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2023-09-10 07:27:50Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="c:\Users\GAMING_SIXTY9\Desktop\data base\data base" File="Form3.cs" Line="120">The query string passed to 'SqlCommand.SqlCommand(string, SqlConnection)' in 'Form3.button2_Click(object, EventArgs)' could contain the following variables 'this.textBox3.Text', 'this.textBox4.Text', 'this.textBox5.Text', 'this.textBox6.Text', 'this.comboBox1.Text'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#button3_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Do not dispose objects multiple times" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2023-09-10 07:27:50Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="c:\Users\GAMING_SIXTY9\Desktop\data base\data base" File="Form3.cs" Line="113">Object 'connection' can be disposed more than once in method 'Form3.button3_Click(object, EventArgs)'. To avoid generating a System.ObjectDisposedException you should not call Dispose more than one time on an object.: Lines: 113</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#button4_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Do not dispose objects multiple times" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2023-09-10 07:27:50Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="c:\Users\GAMING_SIXTY9\Desktop\data base\data base" File="Form3.cs" Line="86">Object 'connection' can be disposed more than once in method 'Form3.button4_Click(object, EventArgs)'. To avoid generating a System.ObjectDisposedException you should not call Dispose more than one time on an object.: Lines: 86</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="Form4" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#button1_Click_1(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Do not dispose objects multiple times" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2023-09-10 07:27:50Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="c:\Users\GAMING_SIXTY9\Desktop\data base\data base\WindowsFormsApplication1\WindowsFormsApplication1" File="Form4.cs" Line="144">Object 'connection' can be disposed more than once in method 'Form4.button1_Click_1(object, EventArgs)'. To avoid generating a System.ObjectDisposedException you should not call Dispose more than one time on an object.: Lines: 144</Issue>
+            </Message>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2023-09-10 07:27:50Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="c:\Users\GAMING_SIXTY9\Desktop\data base\data base\WindowsFormsApplication1\WindowsFormsApplication1" File="Form4.cs" Line="139">The query string passed to 'SqlCommand.SqlCommand(string, SqlConnection)' in 'Form4.button1_Click_1(object, EventArgs)' could contain the following variables 'this.textBox1.Text', 'this.textBox2.Text', 'this.textBox3.Text', 'this.textBox4.Text', 'this.textBox5.Text', 'this.textBox6.Text', 'this.textBox7.Text'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#button2_Click_1(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2023-09-10 07:27:50Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="c:\Users\GAMING_SIXTY9\Desktop\data base\data base\WindowsFormsApplication1\WindowsFormsApplication1" File="Form4.cs" Line="207">The query string passed to 'SqlCommand.SqlCommand(string, SqlConnection)' in 'Form4.button2_Click_1(object, EventArgs)' could contain the following variables 'this.textBox3.Text', 'this.textBox4.Text', 'this.textBox5.Text', 'this.textBox6.Text', 'this.textBox7.Text', 'this.comboBox1.Text'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#button3_Click_1(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Do not dispose objects multiple times" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2023-09-10 07:27:50Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="c:\Users\GAMING_SIXTY9\Desktop\data base\data base\WindowsFormsApplication1\WindowsFormsApplication1" File="Form4.cs" Line="200">Object 'connection' can be disposed more than once in method 'Form4.button3_Click_1(object, EventArgs)'. To avoid generating a System.ObjectDisposedException you should not call Dispose more than one time on an object.: Lines: 200</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#button4_Click_1(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Do not dispose objects multiple times" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2023-09-10 07:27:50Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="c:\Users\GAMING_SIXTY9\Desktop\data base\data base\WindowsFormsApplication1\WindowsFormsApplication1" File="Form4.cs" Line="173">Object 'connection' can be disposed more than once in method 'Form4.button4_Click_1(object, EventArgs)'. To avoid generating a System.ObjectDisposedException you should not call Dispose more than one time on an object.: Lines: 173</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="Form5" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#button1_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Do not dispose objects multiple times" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2023-09-10 07:27:50Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="c:\Users\GAMING_SIXTY9\Desktop\data base\data base\WindowsFormsApplication1\WindowsFormsApplication1" File="Form5.cs" Line="44">Object 'connection' can be disposed more than once in method 'Form5.button1_Click(object, EventArgs)'. To avoid generating a System.ObjectDisposedException you should not call Dispose more than one time on an object.: Lines: 44</Issue>
+            </Message>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2023-09-10 07:27:50Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="c:\Users\GAMING_SIXTY9\Desktop\data base\data base\WindowsFormsApplication1\WindowsFormsApplication1" File="Form5.cs" Line="39">The query string passed to 'SqlCommand.SqlCommand(string, SqlConnection)' in 'Form5.button1_Click(object, EventArgs)' could contain the following variables 'this.textBox1.Text', 'this.textBox2.Text', 'this.textBox3.Text', 'this.textBox4.Text', 'this.textBox5.Text', 'this.textBox6.Text'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#button2_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2023-09-10 07:27:50Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="c:\Users\GAMING_SIXTY9\Desktop\data base\data base\WindowsFormsApplication1\WindowsFormsApplication1" File="Form5.cs" Line="107">The query string passed to 'SqlCommand.SqlCommand(string, SqlConnection)' in 'Form5.button2_Click(object, EventArgs)' could contain the following variables 'this.textBox2.Text', 'this.textBox3.Text', 'this.textBox4.Text', 'this.textBox5.Text', 'this.textBox6.Text', 'this.comboBox1.Text'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#button3_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Do not dispose objects multiple times" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2023-09-10 07:27:50Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="c:\Users\GAMING_SIXTY9\Desktop\data base\data base\WindowsFormsApplication1\WindowsFormsApplication1" File="Form5.cs" Line="100">Object 'connection' can be disposed more than once in method 'Form5.button3_Click(object, EventArgs)'. To avoid generating a System.ObjectDisposedException you should not call Dispose more than one time on an object.: Lines: 100</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#button4_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Do not dispose objects multiple times" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2023-09-10 07:27:50Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="c:\Users\GAMING_SIXTY9\Desktop\data base\data base\WindowsFormsApplication1\WindowsFormsApplication1" File="Form5.cs" Line="73">Object 'connection' can be disposed more than once in method 'Form5.button4_Click(object, EventArgs)'. To avoid generating a System.ObjectDisposedException you should not call Dispose more than one time on an object.: Lines: 73</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+     </Namespaces>
+    </Module>
+   </Modules>
+  </Target>
+ </Targets>
+ <Rules>
+  <Rule TypeName="Do not dispose objects multiple times" Category="Microsoft.Usage" CheckId="CA2202">
+   <Name>Do not dispose objects multiple times</Name>
+   <Description>A correctly implemented Dispose method can be called multiple times without throwing an exception. However, this is not guaranteed and to avoid generating a System.ObjectDisposedException you should not call Dispose more than one time on an object.</Description>
+   <Resolution Name="Default">Object {0} can be disposed more than once in method {1}. To avoid generating a System.ObjectDisposedException you should not call Dispose more than one time on an object.: Lines: 100</Resolution>
+   <Owner>RuleOwner</Owner>
+   <Url>http://msdn.microsoft.com/library/ms182334.aspx</Url>
+   <Email />
+   <MessageLevel Certainty="75">Warning</MessageLevel>
+   <File Name="dataflowrules.dll" Version="12.0.0.0" />
+  </Rule>
+  <Rule TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100">
+   <Name>Review SQL queries for security vulnerabilities</Name>
+   <Description>A SQL command string built from user input is vulnerable to SQL injection attacks. Microsoft SQL Server and other database servers support stored procedures and parameterized SQL queries, which reduce the risk of injection attacks.</Description>
+   <Resolution Name="WithNonLiterals">The query string passed to {0} in {1} could contain the following variables {2}. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Resolution>
+   <Owner>RuleOwner</Owner>
+   <Url>http://msdn.microsoft.com/library/ms182310.aspx</Url>
+   <Email />
+   <MessageLevel Certainty="75">Warning</MessageLevel>
+   <File Name="dataflowrules.dll" Version="12.0.0.0" />
+  </Rule>
+ </Rules>
+ <Localized>
+  <String Key="Category">Category</String>
+  <String Key="Certainty">Certainty</String>
+  <String Key="CollapseAll">Collapse All</String>
+  <String Key="CheckId">Check Id</String>
+  <String Key="Error">Error</String>
+  <String Key="Errors">error(s)</String>
+  <String Key="ExpandAll">Expand All</String>
+  <String Key="Help">Help</String>
+  <String Key="Line">Line</String>
+  <String Key="Messages">message(s)</String>
+  <String Key="LocationNotStoredInPdb">[Location not stored in Pdb]</String>
+  <String Key="Project">Project</String>
+  <String Key="Resolution">Resolution</String>
+  <String Key="Rule">Rule</String>
+  <String Key="RuleFile">Rule File</String>
+  <String Key="RuleDescription">Rule Description</String>
+  <String Key="Source">Source</String>
+  <String Key="Status">Status</String>
+  <String Key="Target">Target</String>
+  <String Key="Warning">Warning</String>
+  <String Key="Warnings">warning(s)</String>
+  <String Key="ReportTitle">Code Analysis Report</String>
+ </Localized>
+</FxCopReport>
